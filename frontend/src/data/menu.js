@@ -9,6 +9,7 @@ export const CATEGORIES = [
   { id: "desayunos-meriendas", title: "Desayunos y Meriendas", subtitle: "Para empezar y cerrar el día", emoji: "🍽" },
   { id: "tostados", title: "Tostados", subtitle: "Pan recién horneado", emoji: "🥐" },
   { id: "panqueques-salados", title: "Panqueques Salados", subtitle: "Rellenos generosos", emoji: "🥞" },
+  { id: "panqueques-dulces", title: "Panqueques Dulces", subtitle: "Para los golosos", emoji: "🥞" },
   { id: "reposteria", title: "Repostería", subtitle: "Tortas caseras", emoji: "🍰" },
   { id: "individuales", title: "Individuales", subtitle: "Para acompañar", emoji: "🍪" },
   { id: "ensaladas-frutas", title: "Ensaladas de Frutas", subtitle: "Naturales y frescas", emoji: "🍒" },
@@ -87,6 +88,12 @@ export const MENU = {
     { name: "Panqueque Tomate", desc: "Jamón, queso y tomate", price: "5.500" },
     { name: "Panqueque con Huevo", desc: "Jamón, queso y huevo", price: "5.000" },
     { name: "Panqueque Clásico", desc: "Jamón y queso", price: "5.000" },
+  ],
+  "panqueques-dulces": [
+    { name: "Panqueque con Dulce de Leche", desc: "Clásico y abundante", price: "5.500" },
+    { name: "Panqueque Manzana & Canela", desc: "Manzana asada con canela", price: "5.800" },
+    { name: "Panqueque Nutella", desc: "Con frutillas frescas", price: "6.200" },
+    { name: "Panqueque Banana Split", desc: "Banana, helado y salsa de chocolate", price: "6.500" },
   ],
   reposteria: [
     { name: "Selva Negra", desc: "", price: "5.000" },
