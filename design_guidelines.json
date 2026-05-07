@@ -1,0 +1,178 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 1: Organic & Earthy",
+  "brand": {
+    "name": "Gardim",
+    "description": "Artisan Ice Cream and Specialty Coffee Shop in Ranelagh, Buenos Aires",
+    "instagram": "https://www.instagram.com/gardim.ranelagh/",
+    "whatsapp": "+54 11 5017-9702",
+    "location": "C. 362 598-500, B1886DCJ Ranelagh, Provincia de Buenos Aires, Argentina"
+  },
+  "colors": {
+    "background": {
+      "primary": "#F8F5F0",
+      "secondary": "#EAE5DF",
+      "tertiary": "#D6CEC4"
+    },
+    "text": {
+      "primary": "#2A1E17",
+      "secondary": "#5C4B40",
+      "accent": "#9E4733"
+    },
+    "accent": {
+      "terracotta": "#9E4733",
+      "pistachio": "#C5CEB6",
+      "espresso": "#1A110A"
+    },
+    "surface": {
+      "card": "#FFFFFF",
+      "glass": "bg-white/70 backdrop-blur-xl border border-white/20"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Manrope",
+      "accent": "Cormorant Garamond"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none font-light",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-none font-light",
+      "h3": "text-2xl md:text-3xl font-normal",
+      "body": "text-base md:text-lg leading-relaxed font-light",
+      "overline": "text-xs tracking-[0.2em] uppercase font-semibold text-accent-terracotta"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto",
+    "grid_gap": "gap-8 md:gap-12",
+    "border_radius": "rounded-none"
+  },
+  "design_rules": {
+    "hero_overlay": "Do NOT use full flat black overlay. Use a very subtle gradient bg-gradient-to-t from-black/40 via-black/10 to-transparent, placed only where text needs contrast.",
+    "buttons": "Flat, pure geometric rectangles (rounded-none). Primary buttons in espresso (#1A110A) with ivory text. Hover state: slight lift, change bg to terracotta (#9E4733).",
+    "marquee": "Slow 'Editorial Ribbon' below the hero. Font: Cormorant Garamond, text-xl. Text: '✧ Heladería Artesanal ✧ Cafetería de Especialidad ✧ Ranelagh ✧'. Background: #EAE5DF, Text: #2A1E17.",
+    "borders": "Use 1px borders in #D6CEC4 (tertiary background) to divide sections and create grid-based bento layouts.",
+    "motion": "Use smooth, slow reveal animations for text. Image parallax on scroll. No bouncy/fast transitions."
+  },
+  "sections_and_components": [
+    {
+      "name": "Navigation",
+      "type": "Sticky Header",
+      "instructions": "Crystal Glassmorphism (bg-white/80 backdrop-blur-md). Logo text centered in Cormorant Garamond. Links left/right. Include CTA for 'Contacto' opening WhatsApp."
+    },
+    {
+      "name": "Hero Section",
+      "type": "Image + Typography Layout",
+      "instructions": "Large immersive image taking 80vh. H1 typography 'Gardim' overlaying the image. Subtitle: 'Heladería y Cafetería Artesanal'. Text must be high contrast.",
+      "image_url": "https://images.unsplash.com/photo-1689076758310-92b693fe6b8b"
+    },
+    {
+      "name": "Editorial Marquee",
+      "type": "react-fast-marquee",
+      "instructions": "Organic flowing text strip conveying brand values. See design_rules."
+    },
+    {
+      "name": "Signature Products",
+      "type": "Bento Grid Mode A",
+      "instructions": "Asymmetric bento grid highlighting 'Copa Gardim', 'Café Gardim', 'Don Pedro', 'Affogato'. Use hover zoom effects on images. No cards, just pure grid borders.",
+      "images": [
+        "https://images.unsplash.com/photo-1680381792123-676305af82d8",
+        "https://images.unsplash.com/photo-1559398049-0a4a31ebb9bc",
+        "https://images.unsplash.com/photo-1603828778059-6e52a251fd2a"
+      ]
+    },
+    {
+      "name": "Full Typographic Menu",
+      "type": "Sticky Sidebar + Scrollable Content",
+      "instructions": "Left sidebar (sticky): Menu Categories. Right area: Typographic list of items. Categories include: Cafetería, Cafés especiales, Repostería, Desayunos y Meriendas, Panqueques salados, Panqueques dulces, Cafés fríos, Bebidas, Individuales, Copas heladas, Batidos, Tostados, Ensaladas de frutas, Hora del Té, Helados. Design like a high-end restaurant physical menu."
+    },
+    {
+      "name": "About / Nuestra Historia",
+      "type": "Split Layout",
+      "instructions": "Left: Large emotional typography explaining the artisan approach in Ranelagh. Right: Tall portrait image of the cafe facade.",
+      "image_url": "https://images.unsplash.com/photo-1766017087286-742264987a43"
+    },
+    {
+      "name": "Instagram Gallery",
+      "type": "Asymmetric Grid",
+      "instructions": "6 to 9 images in an asymmetrical masonry or tight grid pattern. Include Instagram handle prominently overlaid or above the grid.",
+      "images": [
+        "https://images.unsplash.com/photo-1646526533915-52f5b9e7c176",
+        "https://images.unsplash.com/photo-1680381724318-c8ac9fe3a484",
+        "https://images.unsplash.com/photo-1771002469956-1932a606a55e",
+        "https://images.unsplash.com/photo-1596698184973-5f9e0ddc7faa",
+        "https://images.unsplash.com/photo-1759843541048-95dcad7bb44a",
+        "https://images.unsplash.com/photo-1771681208400-c4d837f329c4"
+      ]
+    },
+    {
+      "name": "Location & Footer",
+      "type": "Footer",
+      "instructions": "Huge typography for the CTA 'Vení a conocernos' (text-7xl). Include embedded Google Map to C. 362 598-500, B1886DCJ Ranelagh. Footer links: WhatsApp, Instagram, Horarios. Contrast shift: Background #1A110A (Espresso), Text #F8F5F0 (Ivory)."
+    }
+  ],
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1689076758310-92b693fe6b8b",
+        "description": "A scoop of artisan gelato on a table, elegant lighting. Use for the main hero."
+      }
+    ],
+    "signature_products": [
+      {
+        "url": "https://images.unsplash.com/photo-1680381792123-676305af82d8",
+        "description": "Cappuccino on a wooden table. Use for Café Gardim / Coffee highlight."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1559398049-0a4a31ebb9bc",
+        "description": "Person holding white ice cream cup. Use for Helados / Copa Gardim highlight."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603828778059-6e52a251fd2a",
+        "description": "White ceramic mug. Use for Specialty Coffee highlight."
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.unsplash.com/photo-1766017087286-742264987a43",
+        "description": "Gelateria entrance with warm lighting. Use for the 'Nuestra Historia' section."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1646526533915-52f5b9e7c176",
+        "description": "Person holding gelato cup in front of display."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1680381724318-c8ac9fe3a484",
+        "description": "Person holding latte art."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1771002469956-1932a606a55e",
+        "description": "Warm cafe interior, dimly lit."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1596698184973-5f9e0ddc7faa",
+        "description": "Server holding a tray."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759843541048-95dcad7bb44a",
+        "description": "Cozy outdoor cafe setting."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1771681208400-c4d837f329c4",
+        "description": "Leather chairs round tables cafe."
+      }
+    ]
+  },
+  "testing_attributes": {
+    "rule": "All interactive elements MUST use data-testid attributes",
+    "examples": [
+      "data-testid='nav-menu-button'",
+      "data-testid='whatsapp-contact-button'",
+      "data-testid='instagram-link'",
+      "data-testid='menu-category-helados'"
+    ]
+  }
+}
