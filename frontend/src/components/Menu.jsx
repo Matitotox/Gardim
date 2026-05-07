@@ -39,9 +39,12 @@ export const Menu = () => {
         <div className="grid md:grid-cols-12 gap-12 md:gap-16">
           {/* sticky sidebar */}
           <aside className="md:col-span-4 lg:col-span-3" data-testid="menu-sidebar">
-            <div className="md:sticky md:top-28">
-              <p className="overline mb-6">Categorías</p>
-              <nav className="flex flex-wrap md:flex-col gap-x-3 gap-y-2 md:gap-y-1 border-l border-[#d6cec4]">
+            <div className="md:sticky md:top-28 md:max-h-[calc(100vh-8rem)] md:flex md:flex-col">
+              <p className="overline mb-6 shrink-0">Categorías</p>
+              <nav
+                className="flex flex-wrap md:flex-col gap-x-3 gap-y-2 md:gap-y-1 border-l border-[#d6cec4] md:overflow-y-auto md:overscroll-contain md:pr-2"
+                style={{ scrollbarWidth: "thin" }}
+              >
                 {CATEGORIES.map((c) => (
                   <button
                     key={c.id}
