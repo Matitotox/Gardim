@@ -1,0 +1,6 @@
+/* Gardim — overrides */
+.App {
+    background: var(--bg-ivory);
+    color: var(--text-espresso);
+    min-height: 100vh;
+}
