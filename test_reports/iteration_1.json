@@ -1,0 +1,34 @@
+{
+  "summary": "Frontend-only e2e UI testing of Gardim informational website at https://gardim-cafe.preview.emergentagent.com on desktop (1920x1080) and mobile (390x844). All requested data-testid hooks present. Hero, Navbar, Signature, Menu (sidebar + scrolling), About, Gallery, Footer, mobile drawer all render and behave correctly. Backend skipped per request.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Footer map", "issues": ["Embedded Google Map iframe uses very strong CSS filter (invert + hue-rotate + saturate + grayscale) for dark theme — readability of street labels is significantly reduced. Visually consistent with theme but borderline accessibility."]},
+      {"screen": "Mobile WhatsApp button (bottom area)", "issues": ["The Emergent platform 'Made with Emergent' badge sits at bottom-right and may visually overlap the footer WhatsApp button on small viewports. This is platform UI, not app code, but worth noting."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Minor: request mentions '15 categories' but data/menu.js + UI both expose 14 categories (matching the comma-separated list of 14 names actually given in the request). If 15 was intended, add the missing one; otherwise update the count text in the spec/PRD.",
+    "Optional: tone down the map iframe CSS filter for better legibility, or provide a 'view in Google Maps' fallback (already partly covered by 'Cómo llegar' link)."
+  ],
+  "critical_code_review_comments": [
+    "Navbar nav link 'historia' scrolls to id='historia' which does not exist as a dedicated section; it currently lands inside the About component because About contains an inner anchor. Verified element exists, but consider adding id='historia' to the About <section> explicitly so 'Historia' nav is semantically correct (currently relies on a child element).",
+    "Footer uses a Google Maps embed via maps.google.com/maps?...&output=embed (no API key). This works without a key but is technically an unsupported/legacy embed; consider an official Embed API key in env for production reliability.",
+    "Hero animation uses inline <style> for keyframes. Acceptable, but better placed in App.css to centralize animations.",
+    "All components correctly use data-testid attributes (good test coverage hooks)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "skipped", "frontend": "100%"},
+  "test_credentials": "N/A — public informational site, no auth.",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All data-testids verified. Verified flows: hero title 'Gardim', explore button text 'Descubrir la Carta', explore button scrolls to #firma (scrollY ~1090), nav-whatsapp href contains wa.me/5491150179702 with prefilled text, all 4 signature items render (copa-gardim, cafe-gardim, don-pedro, affogato), 14/14 menu categories present with sidebar buttons, sidebar click scrolls to #cat-{id}, item-helados-0 shows 'Una Bocha' + '$ 2.800', item-copas-heladas-0 shows 'Copa Gardim' + '$ 11.500', About has 30/100/365 stats, Gallery shows 6 images and instagram-cta, Footer has whatsapp/instagram/map-link/map. Mobile drawer toggles open/close (height 1->393->1). No broken Unsplash images. Console: no errors.",
+  "rca of the issue": "No bugs requiring RCA — all listed acceptance criteria pass."
+}
