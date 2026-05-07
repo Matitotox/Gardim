@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";  ergwewretge
 
 const ABOUT_IMG = "https://images.unsplash.com/photo-1766017087286-742264987a43?auto=format&fit=crop&w=1400&q=80";
 
