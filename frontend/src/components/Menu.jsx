@@ -42,7 +42,7 @@ export const Menu = () => {
             <div className="md:sticky md:top-28 md:max-h-[calc(100vh-8rem)] md:flex md:flex-col">
               <p className="overline mb-6 shrink-0">Categorías</p>
               <nav
-                className="flex flex-wrap md:flex-col gap-x-3 gap-y-2 md:gap-y-1 border-l border-[#d6cec4] md:overflow-y-auto md:overscroll-contain md:pr-2"
+                className="flex flex-col gap-y-1 border-l border-[#d6cec4] overflow-y-auto overscroll-contain pr-2 min-h-0"
                 style={{ scrollbarWidth: "thin" }}
               >
                 {CATEGORIES.map((c) => (
