@@ -43,7 +43,7 @@ export const Signature = () => {
                 <img
                   src={`${item.image}?auto=format&fit=crop&w=1600&q=80`}
                   alt={item.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500] ease-out group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a110a]/85 via-[#1a110a]/20 to-transparent" />
                 <div className="absolute inset-0 p-7 md:p-10 flex flex-col justify-end">

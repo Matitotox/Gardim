@@ -51,7 +51,7 @@ export const About = () => {
               <img
                 src={ABOUT_IMG}
                 alt="Heladería Gardim"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500] group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#1a110a]/70 to-transparent">
                 <p className="font-serif italic text-[#f8f5f0] text-xl">

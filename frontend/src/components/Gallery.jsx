@@ -59,7 +59,7 @@ export const Gallery = () => {
               <img
                 src={`${p.url}?auto=format&fit=crop&w=1200&q=80`}
                 alt={p.caption}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200] ease-out group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-[#1a110a]/0 group-hover:bg-[#1a110a]/55 transition-colors duration-500 flex items-end p-5">
                 <span className="font-serif italic text-[#f8f5f0] text-xl translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
