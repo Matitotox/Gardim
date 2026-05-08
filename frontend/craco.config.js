@@ -14,13 +14,4 @@ module.exports = {
       return webpackConfig;
     },
   },
-  // Agregamos la configuración de PostCSS aquí por si Tailwind sigue molestando
-  style: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
-  },
 };
