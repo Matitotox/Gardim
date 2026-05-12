@@ -170,8 +170,8 @@ export const BUSINESS = {
   tagline: "Heladería · Cafetería Artesanal",
   description:
     "Helados artesanales y cafés de especialidad en el corazón de Ranelagh. Cada cuchara, cada taza, hechos con tiempo y oficio.",
-  whatsapp: "+5491150179702",
-  whatsappDisplay: "+54 11 5017-9702",
+  whatsapp: "+5491126354634",
+  whatsappDisplay: "+54 9 11 2635-4634",
   instagram: "https://www.instagram.com/gardim.ranelagh/",
   instagramHandle: "@gardim.ranelagh",
   address: "C. 362 598-500, B1886DCJ Ranelagh, Buenos Aires",

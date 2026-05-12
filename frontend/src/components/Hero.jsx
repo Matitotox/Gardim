@@ -62,7 +62,7 @@ export const Hero = () => {
         <button
           onClick={scrollDown}
           aria-label="Scroll"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#f8f5f0]/70 hover:text-[#f8f5f0] transition-colors"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#f8f5f0]/70 hover:text-[#f8f5f0] transition-colors"
         >
           <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
           <span className="block w-px h-12 bg-[#f8f5f0]/40 overflow-hidden relative">
