@@ -28,6 +28,8 @@ export const Navbar = () => {
     "¡Hola Gardim! Quería hacer una consulta."
   )}`;
 
+  const pedidoya = "https://www.pedidosya.com.ar/restaurantes/berazategui/heladeria-gardim-ranelagh-7f96642c-01e7-4258-939b-0e00b51501b1-menu?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnRbQHNDaR3LPgqaN9SHgZACDllO2aq5oVvf26taIylZ9CZskzh1Rx06jWgsg_aem_RCwWrzkqk6zAeVagywhTfw";
+
   return (
     <header
       data-testid="site-navbar"
@@ -60,6 +62,18 @@ export const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a
+            href={pedidoya}
+            target="_blank"
+            rel="noreferrer"
+            data-testid="nav-whatsapp"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-3 bg-[#1a110a] text-[#f8f5f0] text-xs tracking-[0.2em] uppercase font-semibold hover:bg-[#9e4733] transition-colors duration-500"
+          >
+            <span>Pedido Ya</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
           <a
             href={wa}
             target="_blank"
