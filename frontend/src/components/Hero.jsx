@@ -20,9 +20,9 @@ export const Hero = () => {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 pt-32 md:pt-44 pb-24 min-h-screen flex flex-col">
         {/* top tags */}
         <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mb-auto">
-          <span className="overline text-[#c5ceb6]">Ranelagh · Buenos Aires</span>
-          <span className="hidden md:block w-12 h-px bg-[#c5ceb6]/60" />
-          <span className="overline text-[#c5ceb6]">desde la primera cucharada</span>
+          <span className="overline !text-[#e7dccf]">Ranelagh · Buenos Aires</span>
+          <span className="hidden md:block w-12 h-px bg-[#e7dccf]/60" />
+          <span className="overline !text-[#e7dccf]">desde la primera cucharada</span>
         </div>
 
         {/* main title */}
