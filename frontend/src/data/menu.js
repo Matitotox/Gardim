@@ -1,4 +1,7 @@
 // Menú real de Gardim — extraído de https://gardim.ola.click/
+// La clase Menu y Signature no sirven, porq vinculamos los datos con el Excel
+//En el caso de agregar categorias, hay que agregarlas aca, la id siempre debe ser igual al titulo de categoria del excel
+
 
 export const CATEGORIES = [
   { id: "helados", title: "Helados", subtitle: "Nuestra especialidad", emoji: "🍦" },

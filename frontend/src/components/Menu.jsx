@@ -112,7 +112,7 @@ export const Menu = () => {
                                 {it.name}
                               </h4>
 
-                              {it.featured && (
+                              {it.featured === "TRUE" && (
                                 <span className="text-xs uppercase tracking-[0.25em] text-[#9e4733] font-semibold">
                                   ★ Favorita
                                 </span>
