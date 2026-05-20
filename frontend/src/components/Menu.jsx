@@ -2,6 +2,15 @@ import React, { useEffect, useState } from "react";
 import { CATEGORIES, MENU } from "../data/menu";
 
 export const Menu = () => {
+
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    fetch("https://opensheet.elk.sh/1h__pfpPaSm4wHLLP53PmJDgqoAi9itn86SLX7mRT1h8/Hoja1")
+      .then((res) => res.json())
+      .then((data) => setProductos(data));
+  }, []);
+
   const [active, setActive] = useState(CATEGORIES[0].id);
 
   useEffect(() => {
@@ -66,7 +75,7 @@ export const Menu = () => {
           {/* menu content */}
           <div className="md:col-span-8 lg:col-span-9">
             {CATEGORIES.map((cat) => {
-              const items = MENU[cat.id] || [];
+              const items = productos.filter((p) => p.category === cat.id);
               return (
                 <div
                   key={cat.id}
@@ -89,29 +98,50 @@ export const Menu = () => {
                       <li
                         key={idx}
                         data-testid={`item-${cat.id}-${idx}`}
-                        className={`group py-5 md:py-7 grid grid-cols-12 gap-4 md:gap-8 items-baseline transition-all duration-300 hover:bg-[#eae5df]/40 -mx-2 md:-mx-4 px-2 md:px-4 ${
+                        className={`group py-6 md:py-7 transition-all duration-300 hover:bg-[#eae5df]/40 -mx-2 md:-mx-4 px-4 rounded-2xl ${
                           it.featured ? "bg-[#eae5df]/40" : ""
                         }`}
                       >
-                        <div className="col-span-9 md:col-span-9">
-                          <div className="flex items-center gap-3 flex-wrap">
-                            <h4 className="font-serif text-2xl md:text-3xl text-[#2a1e17] leading-tight font-normal">
-                              {it.name}
-                            </h4>
-                            {it.featured && (
-                              <span className="overline text-[#9e4733]">★ favorita</span>
+                        <div className="flex justify-between items-start w-full gap-8">
+
+                          {/* izquierda */}
+                          <div className="flex-1 min-w-0">
+
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <h4 className="font-sans font-semibold text-2xl text-[#111] leading-tight">
+                                {it.name}
+                              </h4>
+
+                              {it.featured && (
+                                <span className="text-xs uppercase tracking-[0.25em] text-[#9e4733] font-semibold">
+                                  ★ Favorita
+                                </span>
+                              )}
+                            </div>
+
+                            {it.desc && (
+                              <p className="text-[#555] text-sm md:text-base mt-2 leading-relaxed max-w-xl">
+                                {it.desc}
+                              </p>
                             )}
+
+                            <div className="mt-10">
+                              <span className="font-bold text-2xl text-[#111]">
+                                {it.price === "—" ? "—" : `$${it.price}`}
+                              </span>
+                            </div>
+
                           </div>
-                          {it.desc && (
-                            <p className="font-body text-sm md:text-base text-[#5c4b40] mt-2 leading-relaxed max-w-2xl">
-                              {it.desc}
-                            </p>
+
+                          {/* derecha */}
+                          {it.image && (
+                            <img
+                              src={it.image}
+                              alt={it.name}
+                              className="w-44 h-32 md:w-52 md:h-36 rounded-2xl object-cover shrink-0"
+                            />
                           )}
-                        </div>
-                        <div className="col-span-3 md:col-span-3 text-right">
-                          <span className="font-serif text-xl md:text-2xl text-[#2a1e17] tabular-nums">
-                            {it.price === "—" ? "—" : `$ ${it.price}`}
-                          </span>
+
                         </div>
                       </li>
                     ))}
