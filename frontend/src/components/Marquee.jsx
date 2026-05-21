@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Marquee = () => {
-  const text = "✦  Heladería Artesanal  ✦  Cafetería de Especialidad  ✦  Ranelagh  ✦  Hecho con Tiempo  ";
+  const text = "✦  Heladería Artesanal  ✦  Cafetería de Especialidad  ✦  Ranelagh  ✦  Hecho con Tiempo";
   return (
     <section data-testid="marquee" className="bg-[#eae5df] border-y border-[#d6cec4] py-6 overflow-hidden relative">
       <div className="flex whitespace-nowrap animate-marquee">
