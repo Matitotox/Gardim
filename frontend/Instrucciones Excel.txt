@@ -1,0 +1,6 @@
+INSTRUCCIONES DEL EXCEL:
+
+1. No cambiar NADA que este en la fila 1
+2. Las categorias deben ir en minuscula, y DEBEN ser previamente agregadas al codigo (o especificadas desde un principio)
+3. Las imagenes deben pasarse antes para agregarlas al codigo (Las tengo que agregar yo (jpg))
+4. Featured indica si es una comida muy pedida (y debe estar en mayusculas)
