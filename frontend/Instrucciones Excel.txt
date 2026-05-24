@@ -1,6 +1,15 @@
 INSTRUCCIONES DEL EXCEL:
 
 1. No cambiar NADA que este en la fila 1
-2. Las categorias deben ir en minuscula, y DEBEN ser previamente agregadas al codigo (o especificadas desde un principio)
-3. Las imagenes deben pasarse antes para agregarlas al codigo (Las tengo que agregar yo (jpg))
-4. Featured indica si es una comida muy pedida (y debe estar en mayusculas)
+2. Las categorias deben ir en minuscula, y haber sido previamente agregadas al codigo (hablar conmigo)
+3. Las imagenes deben pasarse con el siguiente formato: "https://drive.google.com/uc?export=view&id=ID_DE_LA_IMAGEN"
+4. La imagen del Drive debe estar en {
+    "Cualquier persona con el enlace"
+    "permiso Lector"
+}
+5. En formato preferiblemente {
+    .jpg (preferentemente)
+    .png
+    .webp
+}
+6. Link al Drive: "https://drive.google.com/drive/folders/18PsE8Siqv_Yx_3StHMaN894q8vgG25yE"
