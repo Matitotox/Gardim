@@ -136,7 +136,7 @@ export const Menu = () => {
                           {/* derecha */}
                           {it.image && (
                             <img
-                              src={it.image}
+                              src={`https://drive.google.com/thumbnail?id=${it.image}&sz=w1000`}
                               alt={it.name}
                               className="w-44 h-32 md:w-52 md:h-36 rounded-2xl object-cover shrink-0"
                             />

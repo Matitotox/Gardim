@@ -13,3 +13,36 @@ INSTRUCCIONES DEL EXCEL:
     .webp
 }
 6. Link al Drive: "https://drive.google.com/drive/folders/18PsE8Siqv_Yx_3StHMaN894q8vgG25yE"
+
+7. Como saber la ID de una imagen? {
+    Link: https://drive.google.com/file/d/1AbCdEfGhIjKlMn/view?usp=sharing
+    ID: 1AbCdEfGhIjKlMn
+}
+
+//////////////////////////////
+
+¿Como subir imagenes al menu?
+
+1. Entrar a la carpeta del Google Drive {
+    Link: "https://drive.google.com/drive/folders/18PsE8Siqv_Yx_3StHMaN894q8vgG25yE"
+}
+2. Arrastrar la imagen dentro de la carpeta (o Nuevo -> Subir Archivo)
+3. Obtener el link {
+    a. Click derecho sobre la imagen (o en los 3 puntitos)
+    b. "Compartir"
+    c. Cambiar a {
+        "Cualquier persona con el enlace"
+        "Lector"
+    }
+}
+4. Copiar el vinculo {
+    Ejemplo: https://drive.google.com/file/d/1ABC123xyz/view?usp=sharing
+    Copiar solo: 1ABC123xyz (esa es la ID)
+}
+5. Pegar en la columna de image
+
+Imagen en formato preferiblemente {
+    .jpg (preferentemente)
+    .png
+    .webp
+}
