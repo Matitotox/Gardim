@@ -35,7 +35,7 @@ export const Hero = () => {
           </h1>
           <div className="mt-8 md:mt-10 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <p className="font-serif italic text-[#f8f5f0] text-2xl md:text-3xl max-w-xl leading-snug font-light">
-              OQWIJEDOQIHDNCIAUSJHDVIPUWHEPFIUY
+              Helados artesanales y cafés de especialidad, hechos con paciencia y oficio.
             </p>
             <div className="flex items-center gap-4">
               <button
